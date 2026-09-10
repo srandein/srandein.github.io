@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>97PORM国内自拍视频-原创短视频浏览与内容分类指南</title>
+<meta name="description" content="97PORM国内自拍视频内容导航，整理原创短视频分类、热门标签、观看说明与常见问题，帮助用户快速了解平台内容结构与浏览方式。">
+<meta name="keywords" content="97PORM,国内自拍视频,原创短视频,视频分类,短视频浏览">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  background:#0f1117;
+  color:#e8eaf0;
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+
+/* header */
+.site-header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(15,17,23,.92);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid #222634;
+}
+.header-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  height:64px;
+}
+.logo{
+  display:flex;align-items:center;gap:10px;
+  font-size:20px;font-weight:800;letter-spacing:.5px;
+}
+.logo-mark{
+  width:34px;height:34px;border-radius:9px;
+  background:linear-gradient(135deg,#ff4d6d,#ff8a3d);
+  display:flex;align-items:center;justify-content:center;
+  font-size:15px;font-weight:900;color:#fff;
+}
+.logo span.accent{color:#ff6b81}
+.main-nav{display:flex;gap:26px;font-size:15px;color:#a8afc0}
+.main-nav a{transition:color .2s}
+.main-nav a:hover{color:#ff6b81}
+
+/* hero */
+.hero{
+  position:relative;
+  padding:64px 0 56px;
+  background:
+    radial-gradient(700px 320px at 15% 0%,rgba(255,77,109,.18),transparent 70%),
+    radial-gradient(600px 300px at 90% 20%,rgba(255,138,61,.14),transparent 70%),
+    #12141c;
+  border-bottom:1px solid #1e2230;
+}
+.hero h1{
+  font-size:clamp(26px,4vw,40px);
+  line-height:1.3;
+  font-weight:800;
+  max-width:760px;
+  letter-spacing:.5px;
+}
+.hero h1 em{
+  font-style:normal;
+  background:linear-gradient(90deg,#ff4d6d,#ff8a3d);
+  -webkit-background-clip:text;background-clip:text;
+  color:transparent;
+}
+.hero p.lead{
+  margin-top:18px;max-width:680px;
+  color:#a8afc0;font-size:16px;
+}
+.hero-tags{
+  display:flex;flex-wrap:wrap;gap:10px;margin-top:26px;
+}
+.hero-tags span{
+  font-size:13px;color:#cfd4e0;
+  background:#1c2030;border:1px solid #2a3044;
+  padding:6px 14px;border-radius:999px;
+}
+.hero-stats{
+  display:flex;flex-wrap:wrap;gap:34px;margin-top:34px;
+}
+.hero-stats div{min-width:120px}
+.hero-stats strong{
+  display:block;font-size:22px;color:#ff8a3d;font-weight:800;
+}
+.hero-stats small{color:#8b93a7;font-size:13px}
+
+/* section common */
+section{padding:56px 0}
+.section-head{
+  display:flex;align-items:flex-end;justify-content:space-between;
+  gap:16px;margin-bottom:28px;flex-wrap:wrap;
+}
+.section-head h2{
+  font-size:23px;font-weight:800;letter-spacing:.5px;
+  position:relative;padding-left:14px;
+}
+.section-head h2::before{
+  content:"";position:absolute;left:0;top:6px;bottom:6px;width:4px;
+  border-radius:4px;background:linear-gradient(180deg,#ff4d6d,#ff8a3d);
+}
+.section-head p{color:#8b93a7;font-size:14px}
+
+/* category grid */
+.cat-grid{
+  display:grid;gap:18px;
+  grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+}
+.cat-card{
+  background:#171a24;border:1px solid #232838;border-radius:14px;
+  padding:22px 20px;transition:.25s;
+}
+.cat-card:hover{
+  border-color:#ff6b81;transform:translateY(-4px);
+  box-shadow:0 12px 28px rgba(255,77,109,.12);
+}
+.cat-card .icon{
+  width:42px;height:42px;border-radius:11px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:19px;font-weight:800;color:#fff;margin-bottom:14px;
+}
+.cat-card h3{font-size:16px;font-weight:700;margin-bottom:8px}
+.cat-card p{font-size:13.5px;color:#8b93a7;line-height:1.65}
+
+/* hot list */
+.hot-list{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
+.hot-item{
+  display:flex;gap:14px;align-items:flex-start;
+  background:#171a24;border:1px solid #232838;border-radius:12px;
+  padding:16px 18px;transition:.2s;
+}
+.hot-item:hover{border-color:#3a4considerable}
+.hot-item:hover{border-color:#39405a;background:#1b1f2b}
+.hot-rank{
+  flex:0 0 30px;height:30px;border-radius:8px;
+  display:flex;align-items:center;justify-content:center;
+  font-weight:800;font-size:14px;color:#fff;
+  background:linear-gradient(135deg,#ff4d6d,#ff8a3d);
+}
+.hot-item:nth-child(n+4) .hot-rank{
+  background:#2a3044;color:#a8afc0;
+}
+.hot-body h3{font-size:15px;font-weight:700;margin-bottom:5px}
+.hot-body p{font-size:13px;color:#8b93a7}
+
+/* guide columns */
+.guide-grid{
+  display:grid;gap:22px;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+}
+.guide-card{
+  background:#171a24;border:1px solid #232838;border-radius:14px;
+  padding:24px 22px;
+}
+.guide-card h3{
+  font-size:16.5px;font-weight:700;margin-bottom:12px;
+  display:flex;align-items:center;gap:9px;
+}
+.guide-card h3 i{
+  width:8px;height:8px;border-radius:50%;
+  background:#ff8a3d;font-style:normal;
+}
+.guide-card ul{list-style:none}
+.guide-card li{
+  font-size:14px;color:#a8afc0;padding:7px 0 7px 16px;
+  position:relative;line-height:1.6;
+}
+.guide-card li::before{
+  content:"";position:absolute;left:0;top:15px;
+  width:6px;height:6px;border-radius:50%;background:#3a4considerable;
+}
+.guide-card li::before{background:#3d4considerable}
+.guide-card li::before{background:#3d4considerable}
+.guide-card li::before{background:#3d4663}
+
+/* faq */
+.faq{max-width:900px;margin:0 auto}
+.faq-item{
+  border:1px solid #232838;border-radius:12px;
+  background:#171a24;margin-bottom:12px;overflow:hidden;
+}
+.faq-q{
+  width:100%;text-align:left;background:none;border:none;cursor:pointer;
+  color:#e8eaf0;font-size:15.5px;font-weight:600;
+  padding:18px 22px;display:flex;justify-content:space-between;
+  align-items:center;gap:16px;font-family:inherit;
+}
+.faq-q .arrow{
+  flex:0 0 auto;color:#ff8a3d;font-size:13px;transition:transform .25s;
+}
+.faq-item.open .faq-q .arrow{transform:rotate(180deg)}
+.faq-a{
+  max-height:0;overflow:hidden;transition:max-height .3s ease;
+  padding:0 22px;color:#a8afc0;font-size:14px;line-height:1.75;
+}
+.faq-item.open .faq-a{max-height:340px;padding-bottom:18px}
+
+/* notice */
+.notice{
+  background:#1a1620;border:1px solid #3a2430;border-left:4px solid #ff4d6d;
+  border-radius:12px;padding:22px 24px;font-size:14px;color:#c3c9d6;
+}
+.notice strong{color:#ff8a3d}
+
+/* footer */
+.site-footer{
+  background:#0b0d12;border-top:1px solid #1e2230;
+  padding:44px 0 30px;margin-top:20px;
+}
+.footer-grid{
+  display:grid;gap:28px;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  margin-bottom:30px;
+}
+.footer-col h4{font-size:15px;font-weight:700;margin-bottom:14px}
+.footer-col a,.footer-col p{
+  display:block;font-size:13.5px;color:#8b93a7;margin-bottom:9px;
+}
+.footer-col a:hover{color:#ff6b81}
+.footer-bottom{
+  border-top:1px solid #1e2230;padding-top:20px;
+  font-size:13px;color:#6b7near;
+  color:#6b7285;text-align:center;
+}
+
+/* responsive */
+@media (max-width:820px){
+  .main-nav{display:none}
+  .hero{padding:44px 0 40px}
+  .hero-stats{gap:22px}
+  section{padding:40px 0}
+  .section-head h2{font-size:20px}
+}
+@media (max-width:480px){
+  .wrap{padding:0 15px}
+  .logo{font-size:17px}
+  .hero-stats div{min-width:90px}
+  .hero-stats strong{font-size:19px}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="logo">
+      <div class="logo-mark">97</div>
+      <span>97PORM<span class="accent">自拍</span></span>
+    </div>
+    <nav class="main-nav">
+      <a href="#categories">内容分类</a>
+      <a href="#hot">热门方向</a>
+      <a href="#guide">浏览指南</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap">
+      <h1>97PORM国内自拍视频<br><em>原创短视频内容分类与浏览参考</em></h1>
+      <p class="lead">
+        围绕国内自拍短视频这一内容方向，本页整理了常见的内容分类、标签体系、浏览方式与使用注意事项，
+        帮助用户快速了解 97PORM 平台的内容结构与检索逻辑，减少无效浏览。
+      </p>
+      <div class="hero-tags">
+        <span>#国内自拍</span>
+        <span>#原创短视频</span>
+        <span>#生活记录</span>
+        <span>#分类导航</span>
+        <span>#标签检索</span>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <strong>多板块</strong>
+          <small>内容按主题归类</small>
+        </div>
+        <div>
+          <strong>标签化</strong>
+          <small>按关键词快速定位</small>
+        </div>
+        <div>
+          <strong>移动优先</strong>
+          <small>适配手机浏览</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分类 -->
+  <section id="categories">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>内容分类</h2>
+        <p>按主题方向划分，便于按兴趣浏览</p>
+      </div>
+      <div class="cat-grid">
+        <div class="cat-card">
+          <div class="icon" style="background:linear-gradient(135deg,#ff4d6d,#ff8a3d)">生</div>
+          <h3>生活记录</h3>
+          <p>日常片段、城市街拍、居家场景等生活化自拍内容，节奏轻快，适合碎片时间浏览。</p>
+        </div>
+        <div class="cat-card">
+          <div class="icon" style="background:linear-gradient(135deg,#7c5cff,#4d9bff)">才</div>
+          <h3>才艺展示</h3>
+          <p>舞蹈、演唱、乐器、手工等技能类自拍短视频，内容以展示个人特长为主。</p>
+        </div>
+        <div class="cat-card">
+          <div class="icon" style="background:linear-gradient(135deg,#22c55e,#84cc16)">户</div>
+          <h3>户外随拍</h3>
+          <p>旅行、运动、露营、骑行等户外场景记录，画面以自然光和实景为主。</p>
+        </div>
+        <div class="cat-card">
+          <div class="icon" style="background:linear-gradient(135deg,#f59e0b,#ef4444)">创</div>
+          <h3>创意短片</h3>
+          <p>运镜、剪辑、转场等带有创作思路的短内容，强调画面节奏与表达方式。</p>
+        </div>
+        <div class="cat-card">
+          <div class="icon" style="background:linear-gradient(135deg,#06b6d4,#3b82f6)">访</div>
+          <h3>访谈口播</h3>
+          <p>面向镜头的表达类内容，包括观点分享、经验讲述与轻访谈形式。</p>
+        </div>
+        <div class="cat-card">
+          <div class="icon" style="background:linear-gradient(135deg,#ec4899,#8b5cf6)">合</div>
+          <h3>合集专题</h3>
+          <p>按主题、风格或时间线聚合的系列内容，适合连续观看与系统浏览。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 热门方向 -->
+  <section id="hot" style="background:#12141c;border-top:1px solid #1e2230;border-bottom:1px solid #1e2230;">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>热门浏览方向</h2>
+        <p>以下为常见的内容检索维度，非实时榜单</p>
+      </div>
+      <div class="hot-list">
+        <div class="hot-item">
+          <div class="hot-rank">1</div>
+          <div class="hot-body">
+            <h3>城市夜景自拍</h3>
+            <p>以城市灯光为背景的户外自拍记录，画面层次丰富。</p>
+          </div>
+        </div>
+        <div class="hot-item">
+          <div class="hot-rank">2</div>
+          <div class="hot-body">
+            <h3>居家日常片段</h3>
+            <p>室内场景下的生活化内容，节奏舒缓、贴近日常。</p>
+          </div>
+        </div>
+        <div class="hot-item">
+          <div class="hot-rank">3</div>
+          <div class="hot-body">
+            <h3>旅行途中随拍</h3>
+            <p>出行过程中的即时记录，强调真实感与现场氛围。</p>
+          </div>
+        </div>
+        <div class="hot-item">
+          <div class="hot-rank">4</div>
+          <div class="hot-body">
+            <h3>才艺练习记录</h3>
+            <p>舞蹈、乐器等练习过程的自拍视角内容。</p>
+          </div>
+        </div>
+        <div class="hot-item">
+          <div class="hot-rank">5</div>
+          <div class="hot-body">
+            <h3>口播观点分享</h3>
+            <p>面向镜头的表达型内容，适合关注话题讨论的用户。</p>
+          </div>
+        </div>
+        <div class="hot-item">
+          <div class="hot-rank">6</div>
+          <div class="hot-body">
+            <h3>创意剪辑短片</h3>
+            <p>注重转场与节奏的短内容，观赏性较强。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 浏览指南 -->
+  <section id="guide">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>浏览与使用指南</h2>
+        <p>了解结构，减少无效检索</p>
+      </div>
+      <div class="guide-grid">
+        <div class="guide-card">
+          <h3><i></i>如何快速定位内容</h3>
+          <ul>
+            <li>优先使用分类入口，按主题缩小范围</li>
+            <li>结合标签关键词进行二次筛选</li>
+            <li>关注合集专题，适合连续浏览</li>
+            <li>通过内容简介判断是否符合预期</li>
+          </ul>
+        </div>
+        <div class="guide-card">
+          <h3><i></i>内容浏览建议</h3>
+          <ul>
+            <li>根据网络状况选择合适的清晰度</li>
+            <li>移动端建议使用全屏模式观看</li>
+            <li>合理安排浏览时间，避免长时间连续观看</li>
+            <li>遇到无法播放时先检查网络与浏览器版本</li>
+          </ul>
+        </div>
+        <div class="guide-card">
+          <h3><i></i>账号与安全提示</h3>
+          <ul>
+            <li>不要在非官方页面输入账号信息</li>
+            <li>警惕要求付费解锁的诱导链接</li>
+            <li>不随意下载来源不明的播放器插件</li>
+            <li>发现异常内容可通过官方渠道反馈</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 内容说明 -->
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="notice">
+        <strong>内容说明：</strong>
+        本页面为 97PORM 国内自拍视频方向的内容导航与使用参考页，仅用于介绍平台的内容分类逻辑、标签体系与浏览方式。
+        页面不提供视频文件存储与下载服务，具体内容请以平台实际展示为准。浏览时请遵守当地法律法规与平台规则，
+        尊重内容创作者的合法权益。
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" style="background:#12141c;border-top:1px solid #1e2230;">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>常见问题</h2>
+        <p>关于内容浏览的常见疑问</p>
+      </div>
+      <div class="faq">
+        <div class="faq-item">
+          <button class="faq-q" type="button">
+            97PORM 国内自拍视频主要包含哪些内容类型？
+            <span class="arrow">▼</span>
+          </button>
+          <div class="faq-a">
+            内容以国内用户拍摄的原创短视频为主，涵盖生活记录、才艺展示、户外随拍、创意短片、口播表达等方向。
+            平台通常按主题分类并结合标签进行组织，用户可以先从分类入口进入，再根据标签进一步筛选。
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button">
+            浏览时视频无法播放怎么办？
+            <span class="arrow">▼</span>
+          </button>
+          <div class="faq-a">
+            可以先检查网络连接是否稳定，尝试切换网络环境或刷新页面。若仍无法播放，建议更新浏览器到较新版本，
+            或更换其他主流浏览器访问。部分内容可能因清晰度较高而需要更稳定的带宽支持。
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button">
+            页面上的分类和热门方向是实时榜单吗？
+            <span class="arrow">▼</span>
+          </button>
+          <div class="faq-a">
+            页面中的分类与热门方向为内容结构的整理与说明，用于帮助用户理解常见的内容检索维度，
+            并非实时更新的排行榜。实际内容排序与推荐请以平台页面展示为准。
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button">
+            浏览这类内容需要注意什么？
+            <span class="arrow">▼</span>
+          </button>
+          <div class="faq-a">
+            建议在合法合规的前提下浏览，遵守当地法律法规与平台规则。注意保护个人隐私，不在非官方页面提交账号信息，
+            不轻信付费解锁类诱导内容。同时合理安排浏览时间，保持健康的观看习惯。
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button">
+            如何更高效地找到感兴趣的内容？
+            <span class="arrow">▼</span>
+          </button>
+          <div class="faq-a">
+            可以先确定大致方向，通过分类入口缩小范围，再结合标签关键词做二次筛选。关注合集专题能够连续观看同一主题的内容，
+            同时留意内容简介和标签描述，有助于判断是否符合自己的浏览预期。
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>97PORM 内容导航</h4>
+        <p>国内自拍视频方向的内容分类与浏览参考，帮助用户理解平台内容结构。</p>
+      </div>
+      <div class="footer-col">
+        <h4>快速入口</h4>
+        <a href="#categories">内容分类</a>
+        <a href="#hot">热门方向</a>
+        <a href="#guide">浏览指南</a>
+        <a href="#faq">常见问题</a>
+      </div>
+      <div class="footer-col">
+        <h4>使用提示</h4>
+        <p>遵守当地法律法规</p>
+        <p>尊重创作者权益</p>
+        <p>合理安排浏览时间</p>
+      </div>
+      <div class="footer-col">
+        <h4>内容声明</h4>
+        <p>本页为内容导航说明页，不提供视频存储与下载服务，具体内容以平台实际展示为准。</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2024 97PORM 国内自拍视频内容导航 · 本页面仅作内容分类与浏览方式说明
+    </div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.faq-q').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    var item = btn.parentElement;
+    var isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(function(el){
+      el.classList.remove('open');
+    });
+    if(!isOpen){
+      item.classList.add('open');
+    }
+  });
+});
+</script>
+
+</body>
+  </html>
